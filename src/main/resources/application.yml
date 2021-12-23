@@ -7,7 +7,7 @@ spring:
     import: optional:configserver:http://localhost:8888/
   cloud:
     config:
-      profile: perf
+      profile: dev
 management:
   endpoints:
     web:
@@ -15,6 +15,6 @@ management:
         include:
           - '*'
 greeting-service:
-  greeting: "Ola"
-  default-value: "Mundo"
+  greeting: "Salve"
+  defaultValue: "Mundo"
 
